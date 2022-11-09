@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto+Condensed:wght@300;400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden;
+    box-sizing: border-box; */
+}
+
+:root{
+    --font-color-white: rgb(255, 255, 255);
+    --font-color-black: rgb(0, 0, 0);
+    --bg-color: #008060;
+    --btn-color: rgb(15, 49, 36);
+    --fs: 1.2rem;
+}
+
+/* Font robo */
+.font-robo{
+    font-family: 'Roboto Condensed';
+}
+
+/* Font cursive */
+.cursive{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Section 1 landing page */
+.container{
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+.logo{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.logo p{
+    display: inline;
+}
+
+.main-content{
+    margin: auto;
+    width: 65%;
+    text-align: center;
+}
+
+.main-content h1{
+    font-size: 3.5rem;
+}
+
+.main-content p{
+    font-size: var(--fs);
+    color: var(--font-color-white);
+}
+ 
+.main-content .input-field input,
+.main-content .input-field button{
+    width: 45%;
+    padding: 15px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: var(--fs)
+}
+
+.main-content .input-field button{
+    width: 25%;
+    background-color: var(--btn-color);
+    color: var(--font-color-white);
+    font-size: var(--fs);    
+    margin-top: 10px;
+}
+
+.landing-page-Img{
+    width: 100%;
+}
+
+@media screen and (max-width:760px){
+    .main-content{
+        width: 90%;
+    }
+    .main-content h1{
+        font-size: 3rem;
+    }
+    .main-content .input-field button{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:450px){
+    .main-content{
+        width: 95%;
+    }
+    .main-content h1{
+        font-size:2.5rem;
+    }
+    .main-content .input-field input{
+        width: 90%;
+    }
+}
