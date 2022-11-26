@@ -25,11 +25,27 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+/* font size */
+.fs-l{
+    font-size: 2.8rem
+}
+
+.fs-m{
+    font-size: 1.5rem;
+}
+
+/* margin */
+.m-top{
+    margin-top: 30rem;
+}
+
 /* Section 1 landing page */
-.container{
+.section-1-container{
     background-color: var(--bg-color);
     height: 100vh;
+    position: relative;
 }
+
 .logo{
     font-size: 2rem;
     text-align: center;
@@ -72,8 +88,42 @@ body{
     margin-top: 10px;
 }
 
+.landing-image{
+    display: flex;
+    justify-content: center;
+}
+
 .landing-page-Img{
-    width: 100%;
+    width: 60%;
+    display: block;
+    position: absolute;
+}
+
+/* section 2 */
+.section-2-container{
+    background-color: var(--bg-color);
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.section-2{
+    margin: 7rem;
+    position: relative;
+    top: 25px;
+}
+
+/* flex class */
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.d-flex img{
+    width: 40%;
+    margin: 2rem 1rem;
+    border: 1px solid black;
+    flex-grow: 1;
 }
 
 @media screen and (max-width:760px){
@@ -85,6 +135,15 @@ body{
     }
     .main-content .input-field button{
         width: auto;
+    }
+    .section-2{
+        margin: 1rem;
+    }
+    .landing-page-Img{
+        width: 95%;
+    }
+    .d-flex img{
+        width: 40%;
     }
 }
 
@@ -98,4 +157,11 @@ body{
     .main-content .input-field input{
         width: 90%;
     }
+    .landing-page-Img{
+        width: 100%;
+    }
+    .d-flex img{
+        width: 50%;
+    }
+
 }
